@@ -256,16 +256,16 @@ paths:
 components:
   schemas:
     Unauthorized_response:
-      title: 401
+      title: 401 Unauthorized response
       type: object
       properties:
         cod:
           type: integer
-        string:
+        message:
           type: string
       required:
         - cod
-        - string
+        - message
   securitySchemes:
     app_id:
       name: appid
